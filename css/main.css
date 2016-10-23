@@ -1,0 +1,114 @@
+body {
+	padding-top: 10px;
+    padding-bottom: 50px;
+	font-size: 14pt;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+}
+
+strong, b {
+  font-weight: normal;
+  font-size: 140%;
+  color: #000;
+
+}
+
+h1 small {
+  color: #777;
+}
+
+
+footer {
+  	padding: 5px 0px;
+  	border-top: 1px solid #ccc;
+  	color: #777;
+}
+
+footer * {
+  	font-size: 10pt;
+}
+
+form {
+	margin-bottom: 20px;
+}
+
+label {
+    font-weight: inherit;
+}
+
+
+dd > p {
+    margin-bottom: 0px;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+/* TEMPLATE */
+
+.starter-template {
+	padding: 0px 5px 40px 5px;
+}
+
+/* MENU */
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar-collapse {
+    padding-left: 0px;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+    font-size: 26px;
+    color: #777;
+    border-bottom: 1px solid #fff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-right > li > a {
+    color: inherit;
+    background-color: #fff;
+   border-bottom: 1px solid #000;
+}
+
+
+.navbar-default .navbar-nav a:hover, .navbar-default .navbar-nav .active a:hover {
+   background-color: #fff;
+   color: inherit;
+   border-bottom: 1px solid #000;
+}
+
+
+/* CV */
+
+.dl-horizontal dt {
+    color: #777;
+    font-weight: inherit;
+    white-space: normal;
+    text-valign:
+}
+
+
+section#cv > article > header > h3  {
+	border-bottom: 1px solid rgb(240, 240, 240);
+	margin-bottom: 20px;
+}
+
+/* CONTACT */
+
+.help-block {
+ 	font-size: 16px;
+ }
+
+ .btn {
+     font-weight: inherit;
+ }
