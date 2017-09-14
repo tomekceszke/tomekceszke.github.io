@@ -90,17 +90,21 @@ ul {
 
 /* CV */
 
-.dl-horizontal dt {
+
+dl.dl-horizontal dt {
     color: #777;
     font-weight: inherit;
-    white-space: normal;
-    text-valign:
+}
+
+dl.dl-horizontal dd {
+
 }
 
 
 section#cv > article > header > h3  {
 	border-bottom: 1px solid rgb(240, 240, 240);
-	margin-bottom: 20px;
+	margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 /* CONTACT */
