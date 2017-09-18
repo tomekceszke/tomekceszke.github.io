@@ -2,8 +2,9 @@ body {
 	padding-top: 10px;
     padding-bottom: 50px;
 	font-size: 14pt;
-	color: #000;
-	font-family: 'Roboto', sans-serif;
+	color: #555;
+	/*font-family: 'Roboto', sans-serif;*/
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -11,10 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 strong, b {
-  font-weight: normal;
-  font-size: 140%;
   color: #000;
-
 }
 
 h1 small {
@@ -24,7 +22,7 @@ h1 small {
 
 footer {
   	padding: 5px 0px;
-  	border-top: 1px solid #ccc;
+  	border-top: 1px dashed #ccc;
   	color: #777;
 }
 
@@ -41,6 +39,10 @@ label {
 }
 
 
+dl {
+    margin-bottom: 10px;
+}
+
 dd > p {
     margin-bottom: 0px;
 }
@@ -55,12 +57,25 @@ ul {
 	padding: 0px 5px 40px 5px;
 }
 
+.page-header {
+    border-bottom-style: dashed;
+}
+
+.thumbnail {
+    border: 1px dashed #aaa; 
+}
+
+.btn {
+    border: 1px dashed #aaa; 
+}
+
 /* MENU */
 
 .navbar-default {
     background-color: #fff;
     border-color: #fff;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px dashed #ccc;
+    color: #000;
 }
 
 .navbar-collapse {
@@ -71,21 +86,22 @@ ul {
 {
     font-size: 26px;
     color: #777;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px dashed #fff;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-right > li > a {
     color: inherit;
     background-color: #fff;
-   border-bottom: 1px solid #000;
+   border-bottom: 1px dashed #000;
 }
 
 
 .navbar-default .navbar-nav a:hover, .navbar-default .navbar-nav .active a:hover {
    background-color: #fff;
    color: inherit;
-   border-bottom: 1px solid #000;
+   border-bottom: 1px dashed id #000;
 }
+
 
 
 /* CV */
@@ -96,23 +112,9 @@ dl.dl-horizontal dt {
     font-weight: inherit;
 }
 
-dl.dl-horizontal dd {
-
-}
-
 
 section#cv > article > header > h3  {
-	border-bottom: 1px solid rgb(240, 240, 240);
+	border-bottom: 1px dashed rgb(240, 240, 240);
 	margin-top: 40px;
     margin-bottom: 20px;
 }
-
-/* CONTACT */
-
-.help-block {
- 	font-size: 16px;
- }
-
- .btn {
-     font-weight: inherit;
- }
