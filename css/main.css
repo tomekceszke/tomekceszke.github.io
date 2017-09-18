@@ -92,7 +92,8 @@ ul {
 .navbar-default .navbar-nav > .active > a, .navbar-right > li > a {
     color: inherit;
     background-color: #fff;
-   border-bottom: 1px dashed #000;
+    border-bottom: 1px dashed #000;
+    font-weight: bold;
 }
 
 
