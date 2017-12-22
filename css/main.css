@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+
 body {
 	padding-top: 10px;
     padding-bottom: 50px;
 	font-size: 14pt;
-	color: #555;
-	/*font-family: 'Roboto', sans-serif;*/
-    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+	color: #333;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,7 +24,7 @@ h1 small {
 
 footer {
   	padding: 5px 0px;
-  	border-top: 1px dashed #ccc;
+  	border-top: 1px solid #ccc;
   	color: #777;
 }
 
@@ -58,15 +60,15 @@ ul {
 }
 
 .page-header {
-    border-bottom-style: dashed;
+    border-bottom-style: solid;
 }
 
 .thumbnail {
-    border: 1px dashed #aaa; 
+    border: 1px solid #aaa; 
 }
 
 .btn {
-    border: 1px dashed #aaa; 
+    border: 1px solid #aaa; 
 }
 
 /* MENU */
@@ -74,7 +76,7 @@ ul {
 .navbar-default {
     background-color: #fff;
     border-color: #fff;
-    border-bottom: 1px dashed #ccc;
+    border-bottom: 1px solid #ccc;
     color: #000;
 }
 
@@ -86,13 +88,13 @@ ul {
 {
     font-size: 26px;
     color: #777;
-    border-bottom: 1px dashed #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-right > li > a {
     color: inherit;
     background-color: #fff;
-    border-bottom: 1px dashed #000;
+    border-bottom: 1px solid #000;
     font-weight: bold;
 }
 
@@ -100,7 +102,7 @@ ul {
 .navbar-default .navbar-nav a:hover, .navbar-default .navbar-nav .active a:hover {
    background-color: #fff;
    color: inherit;
-   border-bottom: 1px dashed id #000;
+   border-bottom: 1px solid id #000;
 }
 
 
@@ -115,7 +117,7 @@ dl.dl-horizontal dt {
 
 
 section#cv > article > header > h3  {
-	border-bottom: 1px dashed rgb(240, 240, 240);
+	border-bottom: 1px solid rgb(240, 240, 240);
 	margin-top: 40px;
     margin-bottom: 20px;
 }
