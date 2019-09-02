@@ -4,7 +4,7 @@
 body {
 	padding-top: 10px;
     padding-bottom: 50px;
-	font-size: 14pt;
+	font-size: 15pt;
 	color: #333;
     font-family: 'Open Sans', sans-serif;
 }
@@ -23,7 +23,7 @@ h1 small {
 
 
 footer {
-  	padding: 5px 0px;
+  	padding: 5px 0;
   	border-top: 1px solid #ccc;
   	color: #777;
 }
@@ -56,7 +56,7 @@ ul {
 /* TEMPLATE */
 
 .starter-template {
-	padding: 0px 5px 40px 5px;
+	padding: 0 5px 40px 5px;
 }
 
 .page-header {
@@ -81,7 +81,7 @@ ul {
 }
 
 .navbar-collapse {
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 .navbar-default .navbar-nav > li > a
@@ -102,7 +102,7 @@ ul {
 .navbar-default .navbar-nav a:hover, .navbar-default .navbar-nav .active a:hover {
    background-color: #fff;
    color: inherit;
-   border-bottom: 1px solid id #000;
+   border-bottom: 1px solid #000;
 }
 
 
