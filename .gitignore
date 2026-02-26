@@ -1,2 +1,4 @@
 .idea/
 *.iml
+.mcp.json
+.DS_Store
