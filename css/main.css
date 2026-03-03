@@ -178,6 +178,12 @@ a.older-experience-toggle {
 
 /* PRINT */
 
+@media (max-width: 767px) {
+    .page-header h1 small {
+        display: block;
+    }
+}
+
 @media print {
     body {
         font-size: 11pt;
@@ -209,5 +215,9 @@ a.older-experience-toggle {
 
     #older-experience {
         display: block !important;
+    }
+
+    .page-header h1 small {
+        display: inline;
     }
 }
