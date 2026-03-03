@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tomek.ceszke.com/sitemap.xml
