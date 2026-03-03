@@ -7,77 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Tomasz Ceszke" />
-    <meta name="description" content="Get in touch with Tomasz Ceszke — find me on LinkedIn, GitHub, and Stack Overflow." />
-    <meta name="keywords" content="contact, tomasz ceszke, linkedin, github, stack overflow" />
+    <meta name="description" content="Get in touch with Tomasz Ceszke — find me on LinkedIn and GitHub." />
+    <meta name="keywords" content="contact, tomasz ceszke, linkedin, github" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-
-    <script src="/js/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="navbar navbar-default hidden-print">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
+            <div id="navbar">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Profile</a></li>
-                    <li><a href="cv.html">Curriculum Vitae</a></li>
+                    <li><a href="cv.html"><span class="hidden-xs">Curriculum Vitae</span><span class="visible-xs">CV</span></a></li>
                     <li class="active"><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
         <div class="starter-template">
             <header class="page-header"><h1>Contact</h1></header>
-                        
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="img/email256.png" alt="email">
-                    </div>
+
+            <p>Feel free to reach out — I'm open to interesting projects and conversations.</p>
+
+            <div class="contact-list">
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    <div id="email"></div>
+                    <small class="text-muted">Best way to reach me directly.</small>
                 </div>
-                <div class="col-sm-6 col-md-8">
-                    <div class="thumbnail" style="height: 266px; padding-top: 80px">
-                        <img src="img/tommy.png" alt="email">
-                    </div>
+                <div class="contact-item">
+                    <strong>LinkedIn</strong>
+                    <div><a href="https://www.linkedin.com/in/tomekceszke" target="_blank">linkedin.com/in/tomekceszke</a></div>
+                    <small class="text-muted">Professional profile and work history.</small>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="img/linkedin256.png" alt="linkedin">
-                        <div class="caption">
-                            <p></p>
-                            <a href="https://www.linkedin.com/in/tomekceszke" target="_blank" class="btn btn-default btn-lg  btn-block" role="button">LinkedIn profile</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="img/github256.png" alt="github">
-                        <div class="caption">
-                            <p></p>
-                            <a href="https://github.com/tomekceszke" target="_blank" class="btn btn-default btn-lg btn-block" role="button">GitHub profile</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="img/stackoverflow256.png" alt="stackoverflow">
-                        <div class="caption">
-                            <p></p>
-                            <!-- <a href="https://stackoverflow.com/cv/tomekceszke"  target="_blank" class="btn btn-default btn-block" role="button">View my Stack Overflow profile</a>-->
-                            <a href="https://stackoverflow.com/users/story/1625691" target="_blank" class="btn btn-default btn-lg  btn-block" role="button">Stack Overflow Story</a>
-                        </div>
-                    </div>
+                <div class="contact-item">
+                    <strong>GitHub</strong>
+                    <div><a href="https://github.com/tomekceszke" target="_blank">github.com/tomekceszke</a></div>
+                    <small class="text-muted">Open source contributions and personal projects.</small>
                 </div>
             </div>
         </div>
@@ -85,8 +52,15 @@
             <span class="pull-right">&copy; <a href="/">Tomasz Ceszke</a></span>
         </footer>
     </div>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script>
+        (function () {
+            var u = 'tomasz', d = 'ceszke.com';
+            var el = document.getElementById('email');
+            el.innerHTML = '<a href="mailto:' + u + '@' + d + '">' + u + '@' + d + '</a>';
+        })();
+    </script>
 </body>
 
 </html>
