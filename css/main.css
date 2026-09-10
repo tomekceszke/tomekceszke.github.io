@@ -80,8 +80,17 @@ ul {
     border: 1px solid #aaa;
 }
 
-.btn {
+.btn,
+.btn-default {
     border: 1px solid #aaa;
+    color: #337ab7;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    color: #23527c;
+    border-color: #23527c;
+    background-color: #fff;
 }
 
 /* MENU */
@@ -141,22 +150,6 @@ ul {
 
 
 
-/* CONTACT */
-
-.contact-list {
-    margin-top: 20px;
-}
-
-.contact-item {
-    margin-bottom: 24px;
-}
-
-.contact-item strong {
-    display: block;
-    color: #000;
-    margin-bottom: 2px;
-}
-
 /* CV */
 
 
@@ -166,7 +159,9 @@ dl.dl-horizontal dt {
 }
 
 
-section#cv>article>header>h3 {
+section#cv>article>header>h3,
+section#projects>article>header>h3,
+section#contact>article>header>h3 {
     border-bottom: 1px solid rgb(240, 240, 240);
     margin-top: 40px;
     margin-bottom: 20px;
@@ -176,11 +171,66 @@ a.older-experience-toggle {
     color: #777;
 }
 
+/* PROJECTS */
+
+section#projects dl.dl-horizontal,
+section#contact dl.dl-horizontal {
+    margin-bottom: 24px;
+}
+
+section#projects dl.dl-horizontal dt,
+section#contact dl.dl-horizontal dt {
+    white-space: normal;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.project-meta .label {
+    background-color: #f2f2f2;
+    color: #777;
+    font-weight: inherit;
+    padding: 3px 7px;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+@media (min-width: 768px) {
+
+    section#projects dl.dl-horizontal dt {
+        width: 240px;
+    }
+
+    section#projects dl.dl-horizontal dd {
+        margin-left: 260px;
+    }
+
+    .project-links {
+        justify-content: flex-end;
+    }
+}
+
 /* PRINT */
 
 @media (max-width: 767px) {
     .page-header h1 small {
         display: block;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -208,7 +258,9 @@ a.older-experience-toggle {
         margin-top: 0;
     }
 
-    section#cv>article>header>h3 {
+    section#cv>article>header>h3,
+    section#projects>article>header>h3,
+    section#contact>article>header>h3 {
         margin-top: 20px;
         margin-bottom: 10px;
     }
