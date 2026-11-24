@@ -318,3 +318,25 @@ section#cv dl.dl-horizontal {
         margin-bottom: 4px;
     }
 }
+
+/* CV: dates column aligned with the role title line */
+section#cv dl.dl-horizontal dt {
+    font-size: 115%;
+    line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+    section#cv dl.dl-horizontal dt {
+        width: 190px;
+    }
+
+    section#cv dl.dl-horizontal dd {
+        margin-left: 210px;
+    }
+}
+
+@media print {
+    section#cv dl.dl-horizontal dt {
+        font-size: 108%;
+    }
+}
