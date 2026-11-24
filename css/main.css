@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
 
 
 body {
@@ -7,6 +7,7 @@ body {
     font-size: 15pt;
     color: #333;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 h1,
@@ -16,16 +17,22 @@ h4,
 h5,
 h6 {
     color: #000;
+    font-weight: 300;
 }
 
 strong,
 b {
     color: #000;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h1 small {
     color: #777;
+    font-weight: 300;
+}
+
+.btn {
+    font-weight: 300;
 }
 
 
@@ -138,7 +145,7 @@ ul {
     color: inherit;
     background-color: #fff;
     border-bottom: 1px solid #000;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 
