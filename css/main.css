@@ -323,15 +323,23 @@ section#cv dl.dl-horizontal {
 section#cv dl.dl-horizontal dt {
     font-size: 115%;
     line-height: 1.3;
+    /* never truncate dates with an ellipsis; wrap after the dash if needed */
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+}
+
+section#cv dl.dl-horizontal dt .nw {
+    white-space: nowrap;
 }
 
 @media (min-width: 768px) {
     section#cv dl.dl-horizontal dt {
-        width: 220px;
+        width: 235px;
     }
 
     section#cv dl.dl-horizontal dd {
-        margin-left: 240px;
+        margin-left: 255px;
     }
 }
 
