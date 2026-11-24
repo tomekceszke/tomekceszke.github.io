@@ -313,4 +313,8 @@ section#cv dl.dl-horizontal {
     section#cv dl.dl-horizontal {
         margin-bottom: 12px;
     }
+
+    section#cv p.env {
+        margin-bottom: 4px;
+    }
 }
