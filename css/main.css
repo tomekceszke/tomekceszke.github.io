@@ -327,11 +327,11 @@ section#cv dl.dl-horizontal dt {
 
 @media (min-width: 768px) {
     section#cv dl.dl-horizontal dt {
-        width: 190px;
+        width: 220px;
     }
 
     section#cv dl.dl-horizontal dd {
-        margin-left: 210px;
+        margin-left: 240px;
     }
 }
 
