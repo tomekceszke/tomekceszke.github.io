@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Tomasz Ceszke" />
-    <meta name="description" content="Open source projects by Tomasz Ceszke — machine learning, neural networks, computer vision and embedded hardware." />
-    <meta name="keywords" content="projects, open source, tomasz ceszke, machine learning, neural networks, computer vision, esp32, matlab" />
+    <meta name="description" content="Open source projects by Tomasz Ceszke — home automation platform on ESP32, machine learning, neural networks, computer vision and tools." />
+    <meta name="keywords" content="projects, open source, tomasz ceszke, machine learning, neural networks, computer vision, esp32, esp-idf, mqtt, home automation, matlab" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="canonical" href="https://tomek.ceszke.com/projects.html"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://tomek.ceszke.com/projects.html"/>
     <meta property="og:title" content="Projects — Tomasz Ceszke"/>
-    <meta property="og:description" content="Open source projects by Tomasz Ceszke — machine learning, neural networks, computer vision and embedded hardware."/>
+    <meta property="og:description" content="Open source projects by Tomasz Ceszke — home automation platform on ESP32, machine learning, neural networks, computer vision and tools."/>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
@@ -38,10 +38,94 @@
                 </h1>
             </header>
 
-            <p>Major personal open source projects in machine learning, computer vision and embedded
-                hardware — mostly built from scratch.</p>
+            <p>Major personal open source projects: a home automation platform, machine learning and computer vision,
+                and small tools — mostly built from scratch.</p>
 
             <section id="projects">
+                <article id="home-automation">
+                    <header>
+                        <h3>Home automation platform</h3>
+                    </header>
+                    <p class="small">Seven ESP32 devices running 24/7 in my house, built on one shared firmware framework and
+                        one server layer. Design rule: the safety function of each device keeps working when Wi-Fi, the server or
+                        the phone are gone.</p>
+                    <dl class="dl-horizontal">
+                        <dt>home-idf
+                            <div class="project-links">
+                                <a class="btn btn-default btn-xs" href="https://github.com/tomekceszke/home-idf" target="_blank">GitHub</a>
+                            </div>
+                        </dt>
+                        <dd>
+                            <p class="small">Shared ESP-IDF framework for all controllers: Wi-Fi roaming, HTTPS OTA with health check and rollback, MQTT with retained state documents, push notifications, session auth and a common web app shell. Host-tested pure C modules.</p>
+                            <div class="project-meta">
+                                <span class="label label-default">C</span>
+                                <span class="label label-default">ESP-IDF</span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Water Controller
+                            <div class="project-links">
+                                <a class="btn btn-default btn-xs" href="https://github.com/tomekceszke/water-controller" target="_blank">GitHub</a>
+                            </div>
+                        </dt>
+                        <dd>
+                            <p class="small">Anti-flood valve on the house's main water inlet since 2020: closes a motorised valve on abnormal flow, works offline, iPhone web app, MQTT/PostgreSQL history, OTA with rollback. Stopped several real leaks.</p>
+                            <div class="project-meta">
+                                <span class="label label-default">C</span>
+                                <span class="label label-default">ESP32</span>
+                                <span class="label label-default">Python</span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Floor-Heating Controller
+                            <div class="project-links">
+                                <a class="btn btn-default btn-xs" href="https://github.com/tomekceszke/floor-heating-controller" target="_blank">GitHub</a>
+                            </div>
+                        </dt>
+                        <dd>
+                            <p class="small">Underfloor heating pump control with hysteresis, overheat protection and sensor fail-safe; in production for 2+ years, firmware updated over the air.</p>
+                            <div class="project-meta">
+                                <span class="label label-default">C</span>
+                                <span class="label label-default">ESP32</span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Heating Sensors
+                            <div class="project-links">
+                                <a class="btn btn-default btn-xs" href="https://github.com/tomekceszke/heating-controller" target="_blank">GitHub</a>
+                            </div>
+                        </dt>
+                        <dd>
+                            <p class="small">Measures every heating circuit each minute: DS18B20 sensors over MQTT QoS 1 into PostgreSQL with at-least-once ingest; history since 2023.</p>
+                            <div class="project-meta">
+                                <span class="label label-default">C</span>
+                                <span class="label label-default">ESP32</span>
+                                <span class="label label-default">PostgreSQL</span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Homebridge plugin
+                            <div class="project-links">
+                                <a class="btn btn-default btn-xs" href="https://github.com/tomekceszke/homebridge-home-controllers" target="_blank">GitHub</a>
+                            </div>
+                        </dt>
+                        <dd>
+                            <p class="small">Brings the controllers into Apple Home over MQTT: retained state documents, no polling, read-only.</p>
+                            <div class="project-meta">
+                                <span class="label label-default">TypeScript</span>
+                                <span class="label label-default">MQTT</span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <p class="small text-muted">Not public: the server layer (Mosquitto, PostgreSQL, ingest services, backups) and Grafana
+                        dashboards on a Proxmox host, a Matter gateway for Thread room sensors, a gas-boiler bus monitor, utility meter
+                        readout over 868&nbsp;MHz, a garage gate camera and an LVGL wall thermostat panel.</p>
+                </article>
+
                 <article>
                     <header>
                         <h3>Neural networks</h3>
@@ -124,19 +208,45 @@
 
                 <article>
                     <header>
-                        <h3>Hardware</h3>
+                        <h3>Tools &amp; SDKs</h3>
                     </header>
                     <dl class="dl-horizontal">
-                        <dt>Water Controller
+                        <dt>TubeAmp
                             <div class="project-links">
-                                <a class="btn btn-default btn-xs" href="https://github.com/tomekceszke/water-controller" target="_blank">GitHub</a>
+                                <a class="btn btn-default btn-xs" href="https://github.com/tomekceszke/tubeamp" target="_blank">GitHub</a>
                             </div>
                         </dt>
                         <dd>
-                            <p class="small">DIY home anti-flood system: ESP32, hall-effect flow sensor and a motorised shut-off valve.</p>
+                            <p class="small">Retro-styled terminal music player streaming audio from YouTube; distributed through a Homebrew tap.</p>
                             <div class="project-meta">
-                                <span class="label label-default">C</span>
-                                <span class="label label-default">ESP32</span>
+                                <span class="label label-default">Python</span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Ajazz AKP03E SDK
+                            <div class="project-links">
+                                <a class="btn btn-default btn-xs" href="https://github.com/tomekceszke/ajazz-akp03e" target="_blank">GitHub</a>
+                            </div>
+                        </dt>
+                        <dd>
+                            <p class="small">Python SDK for the Ajazz AKP03E stream deck over USB HID, no vendor software required.</p>
+                            <div class="project-meta">
+                                <span class="label label-default">Python</span>
+                                <span class="label label-default">USB HID</span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Eversolo SDK
+                            <div class="project-links">
+                                <a class="btn btn-default btn-xs" href="https://github.com/tomekceszke/eversolo-sdk" target="_blank">GitHub</a>
+                            </div>
+                        </dt>
+                        <dd>
+                            <p class="small">Python SDK for Eversolo audio streamers and DACs over their local HTTP API.</p>
+                            <div class="project-meta">
+                                <span class="label label-default">Python</span>
                             </div>
                         </dd>
                     </dl>
