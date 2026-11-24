@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Tomasz Ceszke" />
-    <meta name="description" content="Open source projects by Tomasz Ceszke — home automation platform on ESP32, machine learning, neural networks, computer vision and tools." />
+    <meta name="description" content="Open source projects by Tomasz Ceszke — ESP32 controllers, machine learning, neural networks, computer vision and tools." />
     <meta name="keywords" content="projects, open source, tomasz ceszke, machine learning, neural networks, computer vision, esp32, esp-idf, mqtt, home automation, matlab" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="canonical" href="https://tomek.ceszke.com/projects.html"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://tomek.ceszke.com/projects.html"/>
     <meta property="og:title" content="Projects — Tomasz Ceszke"/>
-    <meta property="og:description" content="Open source projects by Tomasz Ceszke — home automation platform on ESP32, machine learning, neural networks, computer vision and tools."/>
+    <meta property="og:description" content="Open source projects by Tomasz Ceszke — ESP32 controllers, machine learning, neural networks, computer vision and tools."/>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
@@ -126,9 +126,8 @@
                     <header>
                         <h3>Home automation platform</h3>
                     </header>
-                    <p class="small">Seven ESP32 devices running 24/7 in my house, built on one shared firmware framework and
-                        one server layer. Design rule: the safety function of each device keeps working when Wi-Fi, the server or
-                        the phone are gone.</p>
+                    <p class="small">A family of ESP32 controllers built on one shared firmware framework and one server layer.
+                        Design rule: each device's safety function keeps working without Wi-Fi, the server or the phone.</p>
                     <dl class="dl-horizontal">
                         <dt>home-idf
                             <div class="project-links">
@@ -150,7 +149,7 @@
                             </div>
                         </dt>
                         <dd>
-                            <p class="small">Anti-flood valve on the house's main water inlet since 2020: closes a motorised valve on abnormal flow, works offline, iPhone web app, MQTT/PostgreSQL history, OTA with rollback. Stopped several real leaks.</p>
+                            <p class="small">Anti-flood valve controller: closes a motorised valve on abnormal flow, works offline, web app, MQTT/PostgreSQL history, OTA with rollback. In use since 2020; stopped several real leaks.</p>
                             <div class="project-meta">
                                 <span class="label label-default">C</span>
                                 <span class="label label-default">ESP32</span>
@@ -201,9 +200,8 @@
                             </div>
                         </dd>
                     </dl>
-                    <p class="small text-muted">Not public: the server layer (Mosquitto, PostgreSQL, ingest services, backups) and Grafana
-                        dashboards on a Proxmox host, a Matter gateway for Thread room sensors, a gas-boiler bus monitor, utility meter
-                        readout over 868&nbsp;MHz, a garage gate camera and an LVGL wall thermostat panel.</p>
+                    <p class="small text-muted">Not public: the server layer (MQTT broker, PostgreSQL, ingest services, backups),
+                        Grafana dashboards and a Matter gateway.</p>
                 </article>
 
                 <article>
